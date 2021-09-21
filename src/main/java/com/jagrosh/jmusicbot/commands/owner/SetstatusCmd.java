@@ -15,9 +15,9 @@
  */
 package com.jagrosh.jmusicbot.commands.owner;
 
-import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jmusicbot.Bot;
 import com.jagrosh.jmusicbot.commands.OwnerCommand;
+import com.jagrosh.jmusicbot.commands.util.command.CommandEvent;
 import net.dv8tion.jda.api.OnlineStatus;
 
 /**
@@ -36,7 +36,7 @@ public class SetstatusCmd extends OwnerCommand
     }
     
     @Override
-    protected void execute(CommandEvent event) 
+    protected void execute(CommandEvent event)
     {
         try {
             OnlineStatus status = OnlineStatus.fromKey(event.getArgs());

@@ -15,9 +15,9 @@
  */
 package com.jagrosh.jmusicbot.commands.dj;
 
-import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jmusicbot.Bot;
 import com.jagrosh.jmusicbot.commands.DJCommand;
+import com.jagrosh.jmusicbot.commands.util.command.CommandEvent;
 import com.jagrosh.jmusicbot.settings.Settings;
 
 /**
@@ -38,7 +38,7 @@ public class RepeatCmd extends DJCommand
     
     // override musiccommand's execute because we don't actually care where this is used
     @Override
-    protected void execute(CommandEvent event) 
+    protected void execute(CommandEvent event)
     {
         boolean value;
         Settings settings = event.getClient().getSettingsFor(event.getGuild());

@@ -17,9 +17,10 @@ package com.jagrosh.jmusicbot.commands.owner;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import com.jagrosh.jdautilities.command.CommandEvent;
+
 import com.jagrosh.jmusicbot.Bot;
 import com.jagrosh.jmusicbot.commands.OwnerCommand;
+import com.jagrosh.jmusicbot.commands.util.command.CommandEvent;
 
 /**
  *
@@ -39,7 +40,7 @@ public class EvalCmd extends OwnerCommand
     }
     
     @Override
-    protected void execute(CommandEvent event) 
+    protected void execute(CommandEvent event)
     {
         ScriptEngine se = new ScriptEngineManager().getEngineByName("Nashorn");
         se.put("bot", bot);
